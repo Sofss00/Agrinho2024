@@ -1,11 +1,11 @@
 body{
     margin: auto;
-    background-color: rgb(255, 212, 171);
+    background-color: rgb(255, 194, 137);
 }
 
 header  .logo img{
-    height: 200px;
-    width: 200px;
+    height: 170px;
+    width: 170px;
 }
 
 header .AgroShop{
