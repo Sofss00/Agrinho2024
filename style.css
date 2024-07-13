@@ -3,20 +3,9 @@ body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #f4f4f4;
+    background-color: #ffe0bd;
 }
 
-header {
-    display: flex;
-    justify-content: space-between;
-    padding: 20px;
-    background-color: #f5740ad8;
-    color: white;
-}
-
-header .logo img {
-    max-height: 100px;
-}
 
 header .search-bar {
     display: flex;
