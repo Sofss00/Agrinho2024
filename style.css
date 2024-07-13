@@ -12,4 +12,5 @@ header  .logo{
 header .AgroShop{
     font-size: 97px;
     font-family: 'Courier New', Courier, monospace;
+    display: flex;
 }
