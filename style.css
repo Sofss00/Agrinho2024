@@ -9,14 +9,14 @@ header  .logo img{
 }
 
 header .Agro{
-    font-size: 97px;
+    font-size: 140px;
     font-family: 'Courier New', Courier, monospace;
     display: flex;
     margin-left: 205px;
 }
 
 header .Shop{
-    font-size: 97px;
+    font-size: 140px;
     font-family: 'Courier New', Courier, monospace;
     display: flex;
     margin-left: 210px;
