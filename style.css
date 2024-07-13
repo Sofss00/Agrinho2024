@@ -3,14 +3,14 @@ body{
     background-color: rgb(255, 212, 171);
 }
 
-header  .logo{
+header  .logo img{
     height: 200px;
     width: 200px;
-
 }
 
 header .AgroShop{
     font-size: 97px;
     font-family: 'Courier New', Courier, monospace;
     display: flex;
+    margin-left: 205px;
 }
