@@ -1,21 +1,106 @@
-body{
-margin: 0;
+/* styles.css */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
 }
 
-header{
-
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px;
+    background-color: #4CAF50;
+    color: white;
 }
 
-.logoheader{
-    position: absolute;
+header .logo img {
+    max-height: 50px;
 }
 
-.logoimg{
-    position: absolute;
+header .search-bar {
+    display: flex;
+    align-items: center;
 }
 
-.search{
-    position: absolute;
-    top: 20%;
-    left: 30%;
+header .search-bar input {
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    margin-right: 10px;
+    width: 300px;
+}
+
+header .search-bar button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    background-color: white;
+    color: #4CAF50;
+    cursor: pointer;
+}
+
+header .search-bar button:hover {
+    background-color: #45a049;
+}
+
+main {
+    padding: 20px;
+}
+
+.product-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+}
+
+.product-card {
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    width: calc(33.333% - 20px);
+    box-sizing: border-box;
+}
+
+.product-card iframe {
+    width: 100%;
+    height: 200px;
+    border: none;
+}
+
+.product-info {
+    padding: 15px;
+    text-align: center;
+}
+
+.product-info h3 {
+    margin: 0 0 10px;
+}
+
+.product-info p {
+    margin: 0 0 15px;
+    color: #777;
+}
+
+.product-info button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    background-color: #4CAF50;
+    color: white;
+    cursor: pointer;
+}
+
+.product-info button:hover {
+    background-color: #45a049;
+}
+
+footer {
+    text-align: center;
+    padding: 10px;
+    background-color: #4CAF50;
+    color: white;
 }

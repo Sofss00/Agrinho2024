@@ -1,0 +1,21 @@
+body{
+margin: 0;
+}
+
+header{
+
+}
+
+.logoheader{
+    position: absolute;
+}
+
+.logoimg{
+    position: absolute;
+}
+
+.search{
+    position: absolute;
+    top: 20%;
+    left: 30%;
+}
