@@ -8,9 +8,17 @@ header  .logo img{
     width: 170px;
 }
 
-header .AgroShop{
+header .Agro{
     font-size: 97px;
     font-family: 'Courier New', Courier, monospace;
     display: flex;
     margin-left: 205px;
+}
+
+header .Shop{
+    font-size: 97px;
+    font-family: 'Courier New', Courier, monospace;
+    display: flex;
+    margin-left: 210px;
+    margin-top: ;
 }
