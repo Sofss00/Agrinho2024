@@ -1,5 +1,16 @@
-/* Estilos gerais */
+@media screen and (max-width: 1200px) {
+    /* Estilos para telas menores que 1200px de largura */
+    /* Ajustes para fonte, posicionamento, etc. */
+}
+
+@media screen and (max-width: 768px) {
+    /* Estilos para telas menores que 768px de largura (como celulares) */
+    /* Layouts mais adaptados, como flex-direction: column no header */
+}
+
 body {
+    margin: auto;
+    background-color: rgb(255, 194, 137);
     margin: 0;
     font-family: 'Courier New', Courier, monospace;
     background-color: rgb(255, 194, 137);
@@ -19,13 +30,41 @@ header {
     border-radius: 10px;
 }
 
+header .Shop {
+    font-size: 60px;
+    font-family: 'Courier New', Courier, monospace;
+    position: absolute;
+    margin-left: 218px;
+    bottom: 396px;
+    display: flex;
+}
+
 .Agro, .Shop {
     font-size: 24px;
+}
+
+header .Agro {
+    font-size: 60px;
+    font-family: 'Courier New', Courier, monospace;
+    position: absolute;
+    margin-left: 180px;
+    bottom: 450px;
+    display: flex;
+}
+
+.folha {
+    display: flex;
+    position: absolute;
+    top: 30px;
+    left: 330px;
 }
 
 .search_bar {
     margin-left: auto;
     display: flex;
+    position: absolute;
+    margin-left: 500px;
+    bottom: 480px;
     align-items: center;
 }
 
@@ -117,8 +156,54 @@ footer {
     text-align: center;
     color: white;
     position: relative;
+    left: 20px;
+    bottom: 10px;
+    color: rgb(0, 0, 0);
     bottom: 0;
     width: 100%;
+}
+
+footer .Suporte {
+    display: flex;
+    position: relative;
+    left: 250px;
+    bottom: 72px;
+}
+
+footer .Atendimento {
+    display: flex;
+    position: relative;
+    left: 430px;
+    bottom: 132px;
+}
+
+footer .foot {
+    display: flex;
+    position: absolute;
+    top: 30px;
+    text-align: left;
+}
+
+footer .foot1 {
+    display: flex;
+    position: absolute;
+    top: 75px;
+    text-align: left;
+}
+
+footer .copy {
+    display: flex;
+    position: relative;
+    left: 980px;
+    bottom: 5px;
+}
+
+.product-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+    padding: 20px;
 }
 
 /* Media Query para telas menores */

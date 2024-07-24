@@ -1,6 +1,12 @@
+
+
+
+
+/* Estilos gerais */
 body {
     margin: auto;
     background-color: rgb(255, 194, 137);
+    font-family: 'Courier New', Courier, monospace;
 }
 
 header .logo img {
@@ -11,22 +17,19 @@ header .logo img {
     margin-left: 4px;
 }
 
-header .Shop {
+header .Shop, header .Agro {
     font-size: 60px;
     font-family: 'Courier New', Courier, monospace;
     position: absolute;
-    margin-left: 218px;
-    bottom: 396px;
-    display: flex;
+    bottom: 20px;
 }
 
 header .Agro {
-    font-size: 60px;
-    font-family: 'Courier New', Courier, monospace;
-    position: absolute;
-    margin-left: 180px;
-    bottom: 450px;
-    display: flex;
+    margin-left: 20px;
+}
+
+header .Shop {
+    margin-left: 250px;
 }
 
 .folha {
@@ -40,7 +43,7 @@ header .Agro {
     display: flex;
     position: absolute;
     margin-left: 500px;
-    bottom: 480px;
+    bottom: 20px;
 }
 
 header .input {
@@ -157,49 +160,4 @@ footer .Informacoes {
     display: flex;
     position: relative;
     left: 20px;
-    bottom: 10px;
-    color: rgb(0, 0, 0);
-}
-
-footer .Suporte {
-    display: flex;
-    position: relative;
-    left: 250px;
-    bottom: 72px;
-}
-
-footer .Atendimento {
-    display: flex;
-    position: relative;
-    left: 430px;
-    bottom: 132px;
-}
-
-footer .foot {
-    display: flex;
-    position: absolute;
-    top: 30px;
-    text-align: left;
-}
-
-footer .foot1 {
-    display: flex;
-    position: absolute;
-    top: 75px;
-    text-align: left;
-}
-
-footer .copy {
-    display: flex;
-    position: relative;
-    left: 980px;
-    bottom: 5px;
-}
-
-.product-grid {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 20px;
-    justify-content: center;
-    padding: 20px;
 }
