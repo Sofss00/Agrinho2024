@@ -1,8 +1,6 @@
-/* Estilos gerais para desktop */
 body {
     margin: auto;
     background-color: rgb(255, 194, 137);
-    font-family: 'Courier New', Courier, monospace; /* Adicionei uma fonte padrão */
 }
 
 header .logo img {
@@ -15,6 +13,7 @@ header .logo img {
 
 header .Shop {
     font-size: 60px;
+    font-family: 'Courier New', Courier, monospace;
     position: absolute;
     margin-left: 218px;
     bottom: 396px;
@@ -23,6 +22,7 @@ header .Shop {
 
 header .Agro {
     font-size: 60px;
+    font-family: 'Courier New', Courier, monospace;
     position: absolute;
     margin-left: 180px;
     bottom: 450px;
@@ -30,6 +30,7 @@ header .Agro {
 }
 
 .folha {
+    display: flex;
     position: absolute;
     top: 30px;
     left: 330px;
@@ -201,96 +202,4 @@ footer .copy {
     gap: 20px;
     justify-content: center;
     padding: 20px;
-}
-
-/* Media queries para telas menores */
-@media screen and (max-width: 1200px) {
-    header .Agro,
-    header .Shop {
-        font-size: 40px;
-    }
-
-    .search_bar {
-        margin-left: 300px;
-    }
-
-    .user_actions {
-        margin-left: 1015px;
-    }
-
-    footer .Informacoes {
-        left: 10px;
-    }
-
-    footer .Suporte {
-        left: 150px;
-    }
-
-    footer .Atendimento {
-        left: 290px;
-    }
-
-    footer .copy {
-        left: 780px;
-    }
-}
-
-@media screen and (max-width: 768px) {
-    header {
-        flex-direction: column;
-        align-items: center;
-    }
-
-    header .Agro,
-    header .Shop {
-        font-size: 30px;
-        margin-left: 0;
-        text-align: center;
-    }
-
-    .search_bar {
-        position: static;
-        margin-left: 0;
-        margin-top: 10px;
-        margin-bottom: 10px;
-        text-align: center;
-    }
-
-    header .input {
-        width: 100%;
-        max-width: 300px;
-        margin-right: 0;
-    }
-
-    header .botao {
-        margin-left: 0;
-    }
-
-    .user_actions {
-        position: static;
-        margin-left: 0;
-        margin-top: 10px;
-        text-align: center;
-    }
-
-    footer .Informacoes,
-    footer .Suporte,
-    footer .Atendimento {
-        position: static;
-        left: 0;
-        margin-left: 0;
-        text-align: center;
-    }
-
-    footer .copy {
-        position: static;
-        left: 0;
-        margin-left: 0;
-        text-align: center;
-    }
-
-    .product-card {
-        width: 100%; /* Ocupa toda a largura */
-        margin: 10px 0; /* Espaçamento entre os cards */
-    }
 }
