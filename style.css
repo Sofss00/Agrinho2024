@@ -1,55 +1,35 @@
-@media screen and (max-width: 1200px) {
-    /* Estilos para telas menores que 1200px de largura */
-    /* Ajustes para fonte, posicionamento, etc. */
-}
 
-@media screen and (max-width: 768px) {
-    /* Estilos para telas menores que 768px de largura (como celulares) */
-    /* Layouts mais adaptados, como flex-direction: column no header */
-}
 
+
+
+/* Estilos gerais */
 body {
     margin: auto;
     background-color: rgb(255, 194, 137);
-    margin: 0;
     font-family: 'Courier New', Courier, monospace;
-    background-color: rgb(255, 194, 137);
 }
 
-header {
-    background-color: rgb(212, 124, 41);
-    padding: 10px;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-}
-
-.logo img {
+header .logo img {
+    border-radius: 10px;
     height: 170px;
     width: 170px;
-    border-radius: 10px;
+    margin-top: 4px;
+    margin-left: 4px;
 }
 
-header .Shop {
+header .Shop, header .Agro {
     font-size: 60px;
     font-family: 'Courier New', Courier, monospace;
     position: absolute;
-    margin-left: 218px;
-    bottom: 396px;
-    display: flex;
-}
-
-.Agro, .Shop {
-    font-size: 24px;
+    bottom: 20px;
 }
 
 header .Agro {
-    font-size: 60px;
-    font-family: 'Courier New', Courier, monospace;
-    position: absolute;
-    margin-left: 180px;
-    bottom: 450px;
-    display: flex;
+    margin-left: 20px;
+}
+
+header .Shop {
+    margin-left: 250px;
 }
 
 .folha {
@@ -60,47 +40,73 @@ header .Agro {
 }
 
 .search_bar {
-    margin-left: auto;
     display: flex;
     position: absolute;
     margin-left: 500px;
-    bottom: 480px;
-    align-items: center;
+    bottom: 20px;
 }
 
-.search_bar .input {
+header .input {
     padding: 10px;
     border: none;
     border-radius: 20px;
     margin-right: 10px;
-    width: 300px;
+    width: 500px;
+    height: 15px;
+    background-color: white;
 }
 
-.search_bar .botao {
+header .botao {
     padding: 10px;
     border: none;
-    border-radius: 50%;
+    border-radius: 80px;
     background-color: rgb(212, 124, 41);
     cursor: pointer;
+    display: flex;
+    position: relative;
+    bottom: 10px;
+    left: 0px;
+    height: 60px;
+    width: 60px;
+}
+
+header .button_img {
+    width: 65px;
+    height: 65px;
+    position: relative;
+    display: flex;
+    bottom: 16px;
+    right: 22px;
 }
 
 .user_actions {
-    margin-left: 10px;
+    display: flex;
+    position: absolute;
+    margin-left: 1215px;
+    bottom: 525px;
 }
 
-.user_actions .conta {
+header .conta {
     padding: 10px;
     border: none;
-    border-radius: 50%;
+    border-radius: 80px;
     cursor: pointer;
+    height: 90px;
+    width: 90px;
+    display: flex;
+    position: absolute;
+    left: 0px;
+    bottom: 1px;
     background-color: rgb(212, 124, 41);
 }
 
-.product-grid {
+.img_conta {
+    height: 60px;
+    width: 60px;
     display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    padding: 20px;
+    position: absolute;
+    right: 9px;
+    bottom: 0px;
 }
 
 .product-card {
@@ -108,10 +114,10 @@ header .Agro {
     border-radius: 10px;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
     overflow: hidden;
-    width: calc(33.33% - 40px);
-    margin: 20px;
+    width: 300px;
     text-align: center;
     transition: transform 0.2s;
+    margin: 20px;
 }
 
 .product-card:hover {
@@ -150,96 +156,8 @@ header .Agro {
     background-color: rgb(180, 90, 20);
 }
 
-footer {
-    background-color: rgb(212, 124, 41);
-    padding: 20px;
-    text-align: center;
-    color: white;
+footer .Informacoes {
+    display: flex;
     position: relative;
     left: 20px;
-    bottom: 10px;
-    color: rgb(0, 0, 0);
-    bottom: 0;
-    width: 100%;
-}
-
-footer .Suporte {
-    display: flex;
-    position: relative;
-    left: 250px;
-    bottom: 72px;
-}
-
-footer .Atendimento {
-    display: flex;
-    position: relative;
-    left: 430px;
-    bottom: 132px;
-}
-
-footer .foot {
-    display: flex;
-    position: absolute;
-    top: 30px;
-    text-align: left;
-}
-
-footer .foot1 {
-    display: flex;
-    position: absolute;
-    top: 75px;
-    text-align: left;
-}
-
-footer .copy {
-    display: flex;
-    position: relative;
-    left: 980px;
-    bottom: 5px;
-}
-
-.product-grid {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 20px;
-    justify-content: center;
-    padding: 20px;
-}
-
-/* Media Query para telas menores */
-@media screen and (max-width: 768px) {
-    .Agro, .Shop {
-        font-size: 20px;
-    }
-
-    .search_bar {
-        margin-left: 10px;
-    }
-
-    .user_actions {
-        display: none;
-    }
-
-    .product-card {
-        width: calc(50% - 40px);
-    }
-}
-
-/* Media Query para telas maiores */
-@media screen and (min-width: 1200px) {
-    .Agro, .Shop {
-        font-size: 32px;
-    }
-
-    .search_bar {
-        margin-left: 20px;
-    }
-
-    .user_actions {
-        display: flex;
-    }
-
-    .product-card {
-        width: calc(25% - 40px);
-    }
 }
