@@ -1,8 +1,8 @@
-/* Estilos gerais para desktop */
+/* Estilos gerais */
 body {
     margin: auto;
     background-color: rgb(255, 194, 137);
-    font-family: 'Courier New', Courier, monospace; /* Adicionei uma fonte padrão */
+    font-family: 'Courier New', Courier, monospace;
 }
 
 header .logo img {
@@ -13,23 +13,23 @@ header .logo img {
     margin-left: 4px;
 }
 
-header .Shop {
+header .Shop, header .Agro {
     font-size: 60px;
+    font-family: 'Courier New', Courier, monospace;
     position: absolute;
-    margin-left: 218px;
-    bottom: 396px;
-    display: flex;
+    bottom: 20px;
 }
 
 header .Agro {
-    font-size: 60px;
-    position: absolute;
-    margin-left: 180px;
-    bottom: 450px;
-    display: flex;
+    margin-left: 20px;
+}
+
+header .Shop {
+    margin-left: 250px;
 }
 
 .folha {
+    display: flex;
     position: absolute;
     top: 30px;
     left: 330px;
@@ -39,7 +39,7 @@ header .Agro {
     display: flex;
     position: absolute;
     margin-left: 500px;
-    bottom: 480px;
+    bottom: 20px;
 }
 
 header .input {
@@ -156,141 +156,4 @@ footer .Informacoes {
     display: flex;
     position: relative;
     left: 20px;
-    bottom: 10px;
-    color: rgb(0, 0, 0);
-}
-
-footer .Suporte {
-    display: flex;
-    position: relative;
-    left: 250px;
-    bottom: 72px;
-}
-
-footer .Atendimento {
-    display: flex;
-    position: relative;
-    left: 430px;
-    bottom: 132px;
-}
-
-footer .foot {
-    display: flex;
-    position: absolute;
-    top: 30px;
-    text-align: left;
-}
-
-footer .foot1 {
-    display: flex;
-    position: absolute;
-    top: 75px;
-    text-align: left;
-}
-
-footer .copy {
-    display: flex;
-    position: relative;
-    left: 980px;
-    bottom: 5px;
-}
-
-.product-grid {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 20px;
-    justify-content: center;
-    padding: 20px;
-}
-
-/* Media queries para telas menores */
-@media screen and (max-width: 1200px) {
-    header .Agro,
-    header .Shop {
-        font-size: 40px;
-    }
-
-    .search_bar {
-        margin-left: 300px;
-    }
-
-    .user_actions {
-        margin-left: 1015px;
-    }
-
-    footer .Informacoes {
-        left: 10px;
-    }
-
-    footer .Suporte {
-        left: 150px;
-    }
-
-    footer .Atendimento {
-        left: 290px;
-    }
-
-    footer .copy {
-        left: 780px;
-    }
-}
-
-@media screen and (max-width: 768px) {
-    header {
-        flex-direction: column;
-        align-items: center;
-    }
-
-    header .Agro,
-    header .Shop {
-        font-size: 30px;
-        margin-left: 0;
-        text-align: center;
-    }
-
-    .search_bar {
-        position: static;
-        margin-left: 0;
-        margin-top: 10px;
-        margin-bottom: 10px;
-        text-align: center;
-    }
-
-    header .input {
-        width: 100%;
-        max-width: 300px;
-        margin-right: 0;
-    }
-
-    header .botao {
-        margin-left: 0;
-    }
-
-    .user_actions {
-        position: static;
-        margin-left: 0;
-        margin-top: 10px;
-        text-align: center;
-    }
-
-    footer .Informacoes,
-    footer .Suporte,
-    footer .Atendimento {
-        position: static;
-        left: 0;
-        margin-left: 0;
-        text-align: center;
-    }
-
-    footer .copy {
-        position: static;
-        left: 0;
-        margin-left: 0;
-        text-align: center;
-    }
-
-    .product-card {
-        width: 100%; /* Ocupa toda a largura */
-        margin: 10px 0; /* Espaçamento entre os cards */
-    }
 }
