@@ -4,20 +4,151 @@ body{
 }
 
 header  .logo img{
+    border-radius: 10px;
     height: 170px;
     width: 170px;
-}
-
-header .Agro{
-    font-size: 140px;
-    font-family: 'Courier New', Courier, monospace;
-    display: flex;
-    margin-left: 205px;
+    margin-top: 4px;
+    margin-left: 4px;
 }
 
 header .Shop{
-    font-size: 140px;
+    font-size: 60px;
     font-family: 'Courier New', Courier, monospace;
+    position: absolute;
+    margin-left: 218px;
+    bottom: 396px;
     display: flex;
-    margin-left: 210px;
+}
+
+header .Agro{
+    font-size: 60px;
+    font-family: 'Courier New', Courier, monospace;
+    position: absolute;
+    margin-left: 180px;
+    bottom: 450px;
+    display: flex;
+}
+
+.folha{
+    display: flex;
+    position: absolute;
+    top: 30px;
+    left: 330px;
+}
+
+.search_bar{
+    display: flex;
+    position: absolute;
+    margin-left: 500px;
+    bottom: 480px;
+}
+
+header .input {
+    padding: 10px;
+    border: none;
+    border-radius: 20px;
+    margin-right: 10px;
+    width: 500px;
+    height: 15px;
+    background-color: white;
+}
+
+header .botao {
+    padding: 10px;
+    border: none;
+    border-radius: 80px;
+    background-color: rgb(212, 124, 41);
+    cursor: pointer;
+    display: flex;
+    position: relative;
+    bottom: 10px;
+    left: 0px;
+    height: 60px;
+    width: 60px;
+}
+
+header .button_img{
+    width: 65px;
+    height: 65px;
+    position: relative;
+    display: flex;
+    bottom: 16px;
+    right:22px;
+}
+
+.user_actions{
+    display: flex;
+    position: absolute;
+    margin-left: 1215px;
+    bottom: 525px;
+}
+
+header .conta{
+    padding: 10px;
+    border: none;
+    border-radius: 80px;
+    cursor: pointer;
+    height: 90px;
+    width: 90px;
+    display: flex;
+    position: absolute;
+    left: 0px;
+    bottom: 1px;
+    background-color: rgb(212, 124, 41);
+}
+
+.img_conta{
+    height: 60px;
+    width: 60px;
+    display: flex;
+    position: absolute;
+    right: 9px;
+    bottom: 0px;
+}
+
+.product-card{
+    
+}
+
+footer .Informacoes{
+    display: flex;
+    position: relative;
+    left: 20px;
+    bottom: 10px;
+    color: rgb(0, 0, 0);
+}
+
+footer .Suporte{
+    display: flex;
+    position: relative;
+    left: 250px;
+    bottom: 72px;
+}
+
+footer .Atendimento{
+    display: flex;
+    position: relative;
+    left: 430px;
+    bottom: 132px;
+}
+
+footer .foot{
+    display: flex;
+    position: absolute;
+    top: 30px;
+    text-align: left;
+}
+
+footer .foot1{
+    display: flex;
+    position: absolute;
+    top: 75px;
+    text-align: left;
+}
+
+footer .copy{
+    display: flex;
+    position: relative;
+    left: 980px;
+    bottom: 5px;
 }
