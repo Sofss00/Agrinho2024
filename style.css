@@ -3,7 +3,7 @@ body {
     width: 100%;
   }
 
-@media (min-width: 1200px) {
+@media (min-width: 1920px) {
     /* Ajustes para tela grande */
 
     .logo img{
