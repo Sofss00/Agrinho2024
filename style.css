@@ -198,3 +198,80 @@ body {
         bottom: 10%;
     }
 }
+
+/* Ajustes para telas menores */
+
+@media (max-width: 768px) {
+    /* Ajustes para telas menores aqui */
+    
+    .logo img {
+      width: 50px;
+      height: 50px;
+    }
+    
+    header .agro {
+      font-size: 40px;
+      left: 10%;
+      bottom: 70%;
+    }
+    
+    header .shop {
+      font-size: 40px;
+      left: 12%;
+      bottom: 60%;
+    }
+    
+    .input {
+      width: 60%;
+      height: 30px;
+      left: 20%;
+      top: 15%;
+    }
+    
+    .botao {
+      width: 80px;
+      height: 80px;
+      left: 60%;
+      bottom: 75%;
+    }
+    
+    .product-grid {
+      flex-direction: column;
+    }
+    
+    .product-card {
+      width: 100%;
+      margin: 10px 0;
+    }
+    
+    .footer {
+      position: relative;
+      width: 100%;
+      padding: 20px;
+    }
+    
+    .informacoes {
+      font-size: 16px;
+    }
+    
+    .foot {
+      top: 30%;
+      font-size: 14px;
+    }
+    
+    .foot1 {
+      top: 100%;
+      right: 80%;
+      font-size: 14px;
+    }
+    
+    .suporte {
+      left: 15%;
+      top: 20%;
+    }
+    
+    .atendimento {
+      left: 30%;
+      bottom: 15%;
+    }
+  }
