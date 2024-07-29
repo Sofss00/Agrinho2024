@@ -1,277 +1,301 @@
+/* Estilos gerais */
 body {
-    margin: 0%;
-    width: 100%;
-  }
+  margin: 0;
+  width: 100%;
+  background-color: rgb(255, 194, 137);
+  font-family: Arial, sans-serif;
+}
 
-@media (min-width: 1920px) {
-    /* Ajustes para tela grande */
+header {
+  background-color: rgb(212, 124, 41);
+  position: relative;
+  padding: 20px;
+}
 
-    .logo img{
-        border-radius: 10px; 
-        margin-left: 5px; 
-        margin-top: 5px; 
-        margin-bottom: 2px;
-    }
+/* Logo */
+.logo img {
+  border-radius: 10px;
+  margin-left: 5px;
+  margin-top: 5px;
+  margin-bottom: 2px;
+}
 
-    header .agro{
-        font-size: 80px;
-        font-family: 'Times New Roman', Times, serif;
-        display: flex;
-        position: absolute;
-        left: 15.2%;
-        bottom: 78%;
-        color: #f2f2f2;
-    }
+/* Estilos para textos do cabeçalho */
+header .agro,
+header .shop {
+  font-size: 80px;
+  font-family: 'Times New Roman', Times, serif;
+  display: flex;
+  position: absolute;
+  color: #f2f2f2;
+}
 
-    header .shop{
-        font-size: 80px;
-        font-family: 'Times New Roman', Times, serif;
-        display: flex;
-        position: absolute;
-        left: 17.4%;
-        bottom: 68%; 
-        color: #f2f2f2;
-    }
+header .agro {
+  left: 15.2%;
+  bottom: 78%;
+}
 
-    header .folha_img{
-        height: 100%;
-        width: 100%;
-        display: flex;
-        position: absolute;
-        top: 9%;
-        left: 24%;
-    }
+header .shop {
+  left: 17.4%;
+  bottom: 68%;
+}
 
-    .input{
-        padding: 15px;
-        border: none;
-        border-radius: 50px;
-        width: 40%;
-        height: 15px;
-        background-color: #f2f2f2;
-        font-size: 18px;
-        font-family: Arial, sans-serif;
-        box-shadow: 0 0 10% rgba(0, 0, 0, 0.1);
-        transition: all 0.3s ease-in-out;
-        display: flex;
-        position: absolute;
-        left: 30%;
-        top: 12%;
-    }
+/* Imagem decorativa */
+header .folha_img img {
+  width: 44.5px;
+  height: 45px;
+  position: absolute;
+  top: 9%;
+  left: 24%;
+}
 
-    .botao{
-        height: 100px;
-        border: none;
-        border-radius: 80px;
-        width: 100px;
-        background-color: rgb(212, 124, 41);
-        display: flex;
-        position: absolute;
-        left: 72%;
-        bottom: 80%;
-        cursor: pointer;
-    }
+/* Barra de busca */
+.search_bar {
+  position: absolute;
+  left: 30%;
+  top: 12%;
+}
 
-    .button_img{
-        height: 100px;
-        width: 100px;
-        display: flex;
-        position: absolute;
-        right: 3%;
-        bottom: 5%;
-    }
+.input {
+  padding: 15px;
+  border: none;
+  border-radius: 50px;
+  width: 40%;
+  height: 30px;
+  background-color: #f2f2f2;
+  font-size: 18px;
+  box-shadow: 0 0 10% rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease-in-out;
+}
 
-    .conta{
-        height: 90px;
-        width: 90px;
-        display: flex;
-        position: absolute;
-        left: 94.5%;
-        bottom: 89%;
-        border: none;
-        border-radius: 50px;
-        background-color: rgb(212, 124, 41);
-    }
+/* Botão de pesquisa */
+.botao {
+  height: 100px;
+  width: 100px;
+  border: none;
+  border-radius: 80px;
+  background-color: rgb(212, 124, 41);
+  cursor: pointer;
+  position: absolute;
+  left: 72%;
+  bottom: 80%;
+}
 
-    .img_conta{
-        height: 75px;
-        width: 75px;
-        display: flex;
-        position: absolute;
-        bottom: 22%;
-        left: 20%;
-        cursor: pointer;
-    }
+.button_img {
+  height: 60px;
+  width: 60px;
+}
 
-    /* Container para os produtos */
+/* Ação do usuário */
+.conta {
+  height: 90px;
+  width: 90px;
+  border: none;
+  border-radius: 50px;
+  background-color: rgb(212, 124, 41);
+  position: absolute;
+  left: 94.5%;
+  bottom: 89%;
+  cursor: pointer;
+}
+
+.img_conta {
+  height: 75px;
+  width: 75px;
+}
+
+/* Grid de produtos */
 .product-grid {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 20px;
-    justify-content: center;
-    padding: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+  padding: 20px;
 }
 
 /* Estilização do cartão de produto */
 .product-card {
-    background-color: white;
-    border-radius: 10px;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-    overflow: hidden;
-    width: 300px;
-    text-align: center;
-    transition: transform 0.2s;
-    margin: 20px;
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  width: 300px;
+  text-align: center;
+  transition: transform 0.2s;
+  margin: 20px;
 }
 
 .product-card:hover {
-    transform: scale(1.05);
+  transform: scale(1.05);
 }
 
-/* Estilização da imagem do produto */
+/* Imagem do produto */
 .product-info img {
-    width: 100%;
-    height: 200px;
-    object-fit: cover;
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
 }
 
-/* Estilização do título do produto */
+/* Título do produto */
 .product-info h3 {
-    font-size: 1.5em;
-    margin: 10px 0;
+  font-size: 1.5em;
+  margin: 10px 0;
 }
 
-/* Estilização da descrição do produto */
+/* Descrição do produto */
 .product-info p {
-    padding: 0 10px;
-    font-size: 1em;
-    color: #555;
+  padding: 0 10px;
+  font-size: 1em;
+  color: #555;
 }
 
-/* Estilização do botão de detalhes */
+/* Botão de detalhes */
 .product-info button {
-    margin: 10px;
-    padding: 10px 20px;
-    border: none;
-    border-radius: 5px;
-    background-color: rgb(212, 124, 41);
-    color: white;
-    cursor: pointer;
-    transition: background-color 0.3s;
+  margin: 10px;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  background-color: rgb(212, 124, 41);
+  color: white;
+  cursor: pointer;
+  transition: background-color 0.3s;
 }
 
 .product-info button:hover {
-    background-color: rgb(180, 90, 20);
+  background-color: rgb(180, 90, 20);
 }
 
+/* Rodapé */
+.footer {
+  background-color: rgb(212, 124, 41);
+  position: relative;
+  width: 100%;
+  padding: 20px;
+  color: #fff;
+  text-align: center;
+}
 
-    .footer{
-        position: relative;
-        width: 100%;
-    }
+.informacoes {
+  font-family: 'Times New Roman', Times, serif;
+  font-weight: bold;
+  font-size: 18px;
+}
 
-    .informacoes{
-        font-family: 'Times New Roman', Times, serif;
-        left: 1%;
-        font-style: bolder;
-        font-size: 18px;
-    }
+.foot, .foot1, .suporte, .atendimento {
+  font-size: 16px;
+}
 
-    .foot{
-        top: 50%;
-        font-size: 16px;
-    }
-    
-    .foot1{
-        top: 120%;
-        right: 88.5%;
-        font-size: 16px;
-    }
+/* Mensagem de "nenhum resultado" */
+.no-results-message {
+  display: none;
+  color: #d43c20;
+  text-align: center;
+  font-size: 1.2em;
+  margin-top: 20px;
+}
 
-    .suporte{
-        left: 20%;
-        top: 30%;
-    }
+/* Estilo padrão para ocultar elementos */
+.hidden {
+  display: none;
+}
 
-    .atendimento{
-        left: 40%;
-        bottom: 10%;
-    }
+/* Ajustes para telas grandes */
+@media (min-width: 1920px) {
+  header .agro,
+  header .shop {
+      font-size: 80px;
+  }
+
+  .input {
+      width: 40%;
+      height: 30px;
+  }
+
+  .botao {
+      width: 100px;
+      height: 100px;
+  }
+
+  .button_img {
+      height: 100px;
+      width: 100px;
+  }
+
+  .conta {
+      height: 90px;
+      width: 90px;
+  }
+
+  .img_conta {
+      height: 75px;
+      width: 75px;
+  }
+
+  .product-card {
+      width: 300px;
+  }
+
+  .footer {
+      padding: 20px;
+  }
 }
 
 /* Ajustes para telas menores */
-
 @media (max-width: 768px) {
-    /* Ajustes para telas menores aqui */
-    
-    .logo img {
+  .logo img {
       width: 50px;
       height: 50px;
-    }
-    
-    header .agro {
+  }
+
+  header .agro,
+  header .shop {
       font-size: 40px;
       left: 10%;
       bottom: 70%;
-    }
-    
-    header .shop {
-      font-size: 40px;
-      left: 12%;
-      bottom: 60%;
-    }
-    
-    .input {
+  }
+
+  .input {
       width: 60%;
       height: 30px;
       left: 20%;
       top: 15%;
-    }
-    
-    .botao {
+  }
+
+  .botao {
       width: 80px;
       height: 80px;
       left: 60%;
       bottom: 75%;
-    }
-    
-    .product-grid {
+  }
+
+  .product-grid {
       flex-direction: column;
-    }
-    
-    .product-card {
+  }
+
+  .product-card {
       width: 100%;
       margin: 10px 0;
-    }
-    
-    .footer {
-      position: relative;
-      width: 100%;
+  }
+
+  .footer {
       padding: 20px;
-    }
-    
-    .informacoes {
+  }
+
+  .informacoes {
       font-size: 16px;
-    }
-    
-    .foot {
-      top: 30%;
+  }
+
+  .foot, .foot1 {
       font-size: 14px;
-    }
-    
-    .foot1 {
-      top: 100%;
-      right: 80%;
-      font-size: 14px;
-    }
-    
-    .suporte {
+  }
+
+  .suporte {
       left: 15%;
       top: 20%;
-    }
-    
-    .atendimento {
+  }
+
+  .atendimento {
       left: 30%;
       bottom: 15%;
-    }
   }
+}
